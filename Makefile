@@ -1,4 +1,4 @@
-.PHONY: build
+.PHONY: build lint
 
 build:
 	./scripts/build.sh

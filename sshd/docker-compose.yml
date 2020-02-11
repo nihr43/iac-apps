@@ -1,0 +1,10 @@
+---
+
+version: '3.4'
+
+services:
+  web-server:
+    image: 10.0.0.57:5000/sshd
+    build: ./sshd
+    ports:
+      - "2222:22"

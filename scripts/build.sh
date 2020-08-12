@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 home_dir="$(pwd)"
 
 find . -name "docker-compose.yml" \

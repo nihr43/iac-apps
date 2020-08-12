@@ -15,7 +15,10 @@ pipeline {
     }
     stage('build') {
       steps {
-        sh "make build"
+        sh '''
+	  export DOCKER_HOST=ssh://root@docker-0
+	  make build
+	'''
       }
     }
   }

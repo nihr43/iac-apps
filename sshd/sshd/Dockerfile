@@ -9,5 +9,4 @@ RUN ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key -P '' &&\
     wget https://github.com/nihr43.keys -O /root/.ssh/authorized_keys
 #    sed -i 's/\/bin\/ash/\/sbin\/nologin/g' /etc/passwd &&\
 
-EXPOSE 22
 ENTRYPOINT [ "/usr/sbin/sshd", "-D" , "-f", "/etc/ssh/sshd_config" ]
